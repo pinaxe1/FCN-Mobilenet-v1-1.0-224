@@ -1,20 +1,14 @@
 # fcn-mobilenet
-The fork is intended for using Mobilenet 0.25 128 FCN on Orange PI computer vision system<BR>
+It is a copy of https://github.com/vietdoan/fcn-mobilenet
 mobilenet_v1_1.0_224 <BR>
-#MODEL_URL = 'http://download.tensorflow.org/models/mobilenet_v1_1.0_224_2017_06_14.tar.gz'<BR>
-replaced with mobilenet_v1_0.25_128  Which is 4 times faster <BR>
-MODEL_URL = 'http://download.tensorflow.org/models/mobilenet_v1_2018_08_02/mobilenet_v1_0.25_128.tgz'<BR>
-And everything that comes with it.
+MODEL_URL = 'http://download.tensorflow.org/models/mobilenet_v1_1.0_224_2017_06_14.tar.gz'<BR>
 
-The project implments Fully Convolutional Network based on MobileNet v1  image_squeeze 0.25 image_size 128
+The project implments Fully Convolutional Network based on MobileNet v1  image_squeeze 1.0 image_size 224
 
 To run the program you should have about a hundred annotated images stored in<BR>
-Data_zoo/camvid/train<BR>
-               /trainannot<BR>
-Data_zoo/camvid/test<BR>
-               /testannot<BR>
-Data_zoo/camvid/val<BR>
-               /valannot<BR>
+Data_zoo/camvid/train  ../trainannot<BR>
+Data_zoo/camvid/test   ../testannot<BR>
+Data_zoo/camvid/val    ../valannot<BR>
 Annotated image means a pair of images. An image itself and it's annotation.
 It makes a pair of PNG images with the same names. 
 Images would sit in "train/" folder their annotations in "trainannot/" folder. Same for "test/" and "val/" folders.
