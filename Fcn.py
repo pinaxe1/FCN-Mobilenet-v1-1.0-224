@@ -10,7 +10,6 @@ import BatchDatsetReader as dataset
 import time
 from tensorflow.python.tools.inspect_checkpoint import print_tensors_in_checkpoint_file
 
-
 FLAGS = tf.flags.FLAGS
 tf.flags.DEFINE_integer("batch_size", "2", "batch size for training")
 tf.flags.DEFINE_string("logs_dir", "logs/", "path to logs directory")
