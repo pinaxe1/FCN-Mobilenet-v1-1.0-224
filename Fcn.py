@@ -94,7 +94,7 @@ def inference(image, dropout_keep_prob, num_classes=NUM_OF_CLASSES):
                           normalizer_fn=None, scope='Conv2d_1x1')
         net = slim.convolution2d_transpose(net, num_classes, 64, 32)
 
-        annotation_pred = tf.argmax(net, dimension=3, name="prediction")
+        annotation_pred = tf.argmax(net, axis=3, name="prediction")
         
     return tf.expand_dims(annotation_pred, dim=3), net
 
